@@ -1,0 +1,8 @@
+{{yield}}
+<h2>{{title}}</h2>
+
+<ul>
+  {{#each people as |object|}}
+    <li {{action "showObject" object}}>{{object}}</li>
+  {{/each}}
+</ul>

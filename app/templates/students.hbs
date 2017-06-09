@@ -1,0 +1,16 @@
+<h1> List Of Students </h1>
+<h4>{{#link-to 'students.courses'}}{{model.student.name}}{{/link-to}}</h4>
+<ul>
+  {{#each model.student.courses as |object|}}
+    <li>{{object.name}}
+    <ol>
+  		{{#each object.subjects as |obj|}}
+    		<li>{{obj.name}} {{obj.aptitude}}</li>
+  		{{/each}}
+	</ol>
+	{{ember-chart type='Pie' data=model.chartData width=200 height=200}}
+	</li>
+  {{/each}}
+
+</ul>
+{{outlet}}
