@@ -7,7 +7,7 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.route('students', function() {
+  this.route('student', function() {
     this.route('courses');
   });
 });

@@ -1,7 +1,7 @@
 {
   "name": "student-records",
   "dependencies": {
-    "chartjs": "2.5.0",
+    "chartjs": "2.1.6",
     "d3": "~3.5.3",
     "lodash": "~3.10.0"
   }
